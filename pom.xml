@@ -35,6 +35,19 @@
         </license>
     </licenses>
 
+    <distributionManagement>
+     <repository>
+        <id>deployment</id>
+        <name>releases</name>
+        <url>http://ec2-107-23-154-119.compute-1.amazonaws.com:9080/nexus-2.14.5-02/content/repositories/releases/</url>
+    </repository>
+     <snapshotRepository>
+        <id>deployment</id>
+        <name>snapshots</name>
+        <url>http://ec2-107-23-154-119.compute-1.amazonaws.com:9080/nexus-2.14.5-02/content/repositories/snapshots/</url>
+   </snapshotRepository>
+    </distributionManagement> 
+    
     <properties>
         <!-- Explicitly declaring the source encoding eliminates the following 
             message: -->
