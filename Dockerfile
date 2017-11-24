@@ -11,7 +11,7 @@ RUN apt-get update && \
 	 
 
 
- apt-get install curl && \
+RUN apt-get install curl && \
  mkdir -p /opt/maven && \
   && curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz \
     | tar -xzC /opt/maven --strip-components=1 \
